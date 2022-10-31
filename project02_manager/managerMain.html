@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="managerMain.css">
+</head>
+<body>
+    <div class="totalWrap">
+        <!-- 왼쪽 영역(사이드바) -->
+        <div class="left">
+            <div class="menu">
+                <label for="expand-menu">
+                    <div>메뉴</div>
+                </label>
+                <input type="checkbox" id="expand-menu" name="expand-menu">
+                <ul>
+                    <li><a href="#" class="item"><div>대시보드</div></a></li>
+                    <li><a href="#" class="item"><div>사용자 관리</div></a></li>
+                    <li><a href="#" class="item"><div>게시글/댓글 관리</div></a></li>
+                    <li><a href="#" class="item"><div>배너 관리</div></a></li>
+                    <li><a href="#" class="item"><div>통계</div></a></li>
+                    <li><a href="#" class="item"><div>사이트 바로가기</div></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 오른쪽 영역 -->
+        <div class="right">
+            <div class="right-left-top-section section">
+                <div class="firstSectionTitle title">방문자 현황</div>
+                <div class="firstSectionContents contents">
+                    <canvas id="bar-chart" width="600" height="320"></canvas>
+                </div>
+            </div>
+            <div class="right-right-top-section section">
+                <div class="secondSectionTitle title">일자별 요약</div>
+                <div class="secondSectionContents contents">
+                    <div class="table-responsive">
+                        <table class="table custom-table">
+                          <thead>
+                            <tr>
+                              <th scope="col" style="width: 112px;">일자</th>
+                              <th scope="col" style="width: 131px;">페이지뷰</th>
+                              <th scope="col">방문자</th>
+                              <th scope="col">가입</th>
+                              <th scope="col">새 글</th>
+                              <th scope="col">댓글</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>2022-10-04</td>
+                              <td>183</td>
+                              <td>14</td>
+                              <td>3</td>
+                              <td>7</td>
+                              <td>12</td>
+                            </tr>
+                            <tr>
+                              <td>2022-10-03</td>
+                              <td>286</td>
+                              <td>14</td>
+                              <td>3</td>
+                              <td>7</td>
+                              <td>12</td>
+                            </tr>
+                            <tr>
+                              <td>2022-10-02</td>
+                              <td>182</td>
+                              <td>14</td>
+                              <td>3</td>
+                              <td>7</td>
+                              <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>2022-10-01</td>
+                                <td>183</td>
+                                <td>14</td>
+                                <td>3</td>
+                                <td>7</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>최근 7일 합계</td>
+                                <td>1024</td>
+                                <td>14</td>
+                                <td>3</td>
+                                <td>7</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>이번달 합계</td>
+                                <td>1578</td>
+                                <td>14</td>
+                                <td>3</td>
+                                <td>7</td>
+                                <td>12</td>
+                            </tr>
+                            
+                          </tbody>
+                        </table>
+                      </div>
+                </div>
+            </div>
+            <div class="right-left-bottom-section section">
+                <div class="thirdSectionTitle title">가입 · 탈퇴 현황</div>
+                <div class="thirdSectionContents contents">
+                    <canvas id="line-chart" width="600" height="320"></canvas>
+                </div>
+            </div>
+            <div class="right-right-bottom-section section">
+                <div class="fourthSectionTitle title">최근 게시글</div>
+                <div class="fourthSectionContents contents">
+                    <div class="table-responsive">
+                        <table class="table custom-table">
+                          <thead>
+                            <tr>
+                              <th scope="col" style="width: 112px;">일자</th>
+                              <th scope="col" style="width: 220px;">제목</th>
+                              <th scope="col">아이디</th>
+                              <th scope="col">게시판명</th>
+                              <th scope="col">조회수</th>
+                              <th scope="col">댓글 수</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>2022-10-04</td>
+                              <td>183</td>
+                              <td>14</td>
+                              <td>3</td>
+                              <td>7</td>
+                              <td>12</td>
+                            </tr>
+                            <tr>
+                              <td>2022-10-03</td>
+                              <td>286</td>
+                              <td>14</td>
+                              <td>3</td>
+                              <td>7</td>
+                              <td>12</td>
+                            </tr>
+                            <tr>
+                              <td>2022-10-02</td>
+                              <td>182</td>
+                              <td>14</td>
+                              <td>3</td>
+                              <td>7</td>
+                              <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>2022-10-01</td>
+                                <td>183</td>
+                                <td>14</td>
+                                <td>3</td>
+                                <td>7</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>최근 7일 합계</td>
+                                <td>1024</td>
+                                <td>14</td>
+                                <td>3</td>
+                                <td>7</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>이번달 합계</td>
+                                <td>1578</td>
+                                <td>14</td>
+                                <td>3</td>
+                                <td>7</td>
+                                <td>12</td>
+                            </tr>
+                            
+                          </tbody>
+                        </table>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="managerMain.js"></script>
+</html>

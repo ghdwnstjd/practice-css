@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>병원 찾기</title>
+    <link rel="stylesheet" href="map.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="wrap">
+        <div class="category">
+            <span class="location">병원</span> ㅣ
+            <span class="location">카페/음식점</span> ㅣ
+            <span class="location">관광지</span> ㅣ
+            <span class="location">놀이터</span>
+        </div>
+        <div id="mapSearch">
+            <div id="mapSearchText">
+                <input type="text" name="id" class="inputSearch" maxlength="20">
+                <button type="submit" class="btnSearch">
+                    <span class="btn_text">검색</span>
+                </button>
+            </div>
+            <div class="mapSearchBound"></div>
+        </div>
+        <div id="realMap">
+            <div id="mapText">
+                지도
+            </div>
+        </div>
+        <div id="apiComment"> 
+            <div id="apiText">
+                후기
+            </div> 
+            <div class="apiTextLine"></div>
+        </div>
+        <div id="wrapSecond">
+            <div id="wrapSecondText">
+                우리 사이트 후기
+            </div>
+            <span id="replyTitle">후기</span>
+            <div class="replyLine">
+                <span id="mapSearchText"> 
+                    <button type="submit" class="btnAdmit">
+                        <span class="btn_reply">등록</span>
+                    </button>
+                    <input type="text" name="id" class="afterReply" maxlength="20">
+                </span>
+            </div>
+            <div class="wrapSecondTextLine"></div>
+        </div>
+    </div>
+</body>
+</html>
